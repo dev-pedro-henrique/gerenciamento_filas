@@ -26,6 +26,10 @@ Todos os itens `PB01` a `PB18` foram classificados como “deve ter” no docume
 
 Disponibilizar a base do sistema com acesso controlado, configuração inicial da clínica e cadastro de pacientes. A duração prevista é de duas semanas, com 60 horas de capacidade, 56 comprometidas e quatro reservadas.
 
+### Recorte deste trabalho
+
+Apesar de a Sprint 1 do grupo conter `PB01`, `PB02` e `PB03`, a implementação sob responsabilidade atual cobre apenas `PB01`: login, sessão, autorização e cadastro/gestão de recepcionistas pelo gestor. `PB02` e `PB03`, inclusive todo cadastro de pacientes, pertencem a outros integrantes e não serão implementados neste conjunto de commits.
+
 ## Itens e critérios da Sprint 1
 
 ### PB01 Autenticação e perfis — 5 pontos
@@ -84,4 +88,3 @@ O solicitante informou que atualmente é responsável pela autenticação, mas s
 - O modelo de usuário deve existir antes da auditoria de `PB16`, mesmo que a auditoria completa esteja planejada para a Sprint 5.
 - A separação entre conta interna e link do paciente reduz retrabalho quando `PB13` começar.
 - Critérios de permissão precisam ser testados no backend e no frontend desde a Sprint 1.
-

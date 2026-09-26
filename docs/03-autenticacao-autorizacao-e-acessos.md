@@ -2,6 +2,19 @@
 
 Este documento aprofunda o item `PB01`, sem transformar decisões técnicas ainda não tomadas em regras confirmadas.
 
+## Escopo da implementação atual
+
+Esta entrega inclui:
+
+- login por nome de usuário e senha;
+- sessão interna única, expiração por inatividade e logout;
+- autorização dos perfis gestor e recepção;
+- cadastro, ativação, desativação e alteração de recepcionistas somente pelo gestor;
+- recuperação assistida da conta do gestor por comando administrativo seguro;
+- testes de autenticação, sessão, senha, bloqueio e permissões.
+
+Esta entrega não inclui cadastro ou localização de pacientes, link do paciente, filas, serviços, relatórios ou atendimento. As referências a esses módulos neste documento apenas definem fronteiras para integração futura.
+
 ## Fronteiras do problema
 
 Há dois mecanismos diferentes e eles não devem ser confundidos:

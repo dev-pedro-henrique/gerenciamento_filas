@@ -4,7 +4,8 @@ Antes de analisar, planejar ou implementar qualquer mudança, leia `docs/README.
 
 ## Estado atual
 
-- A implementação da Sprint 1 foi autorizada para autenticação, gestão de contas internas e cadastro/localização de pacientes.
+- A implementação autorizada neste trabalho cobre somente autenticação e gestão de contas internas: login, sessão, logout e cadastro/gestão de recepcionistas pelo gestor.
+- Não criar modelo, API, tela, formulário ou validação de cadastro de pacientes; esse item pertence a outro integrante.
 - Não implementar o fluxo completo de filas, relatórios ou outros itens do backlog sem solicitação explícita.
 - O produto atual é específico para uma clínica de psicologia. Não introduzir multiempresa, multitenancy ou white label sem mudança de escopo validada.
 

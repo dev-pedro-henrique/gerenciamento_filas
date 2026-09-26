@@ -40,7 +40,7 @@ Validar primeiro as pendências que alteram o comportamento da autenticação. S
 
 ## 25 de setembro de 2026 — início da implementação
 
-- autorizado o desenvolvimento de login, gestão de contas e cadastro/localização de pacientes;
+- autorizado inicialmente o desenvolvimento de login, gestão de contas e cadastro/localização de pacientes;
 - definido nome de usuário como identificador de login;
 - gestão de contas reservada ao gestor;
 - definida política de senha forte, cinco tentativas e bloqueio temporário inicial de 15 minutos;
@@ -49,3 +49,9 @@ Validar primeiro as pendências que alteram o comportamento da autenticação. S
 - link do paciente expira na conclusão e permite cancelamento sem confirmação adicional;
 - primeira versão considera um psicólogo, com modelo extensível para uma fila por profissional;
 - referência visual adotada: fundo verde sálvia claro, cartões brancos, bordas suaves, tipografia sóbria e ações em verde escuro.
+
+### Correção de escopo
+
+- o cadastro mencionado pelo responsável é o cadastro de recepcionistas, não de pacientes;
+- a entrega atual fica restrita a login, sessão, autorização e gestão de recepcionistas pelo gestor;
+- cadastro de pacientes pertence a outro integrante e não deve ser implementado nestes commits.
