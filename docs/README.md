@@ -13,6 +13,7 @@ Esta pasta consolida o entendimento obtido nas fontes de requisitos e deve ser m
 7. [`06-decisoes-e-pendencias.md`](06-decisoes-e-pendencias.md) — decisões confirmadas, hipóteses e dúvidas que exigem validação.
 8. [`07-diretrizes-de-engenharia-e-git.md`](07-diretrizes-de-engenharia-e-git.md) — padrões a aplicar quando o desenvolvimento começar.
 9. [`08-historico-do-projeto.md`](08-historico-do-projeto.md) — evolução documental e marcos do projeto.
+10. [`09-implementacao-da-autenticacao.md`](09-implementacao-da-autenticacao.md) — arquitetura entregue, API e integração.
 
 ## Hierarquia das informações
 

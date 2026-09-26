@@ -55,3 +55,37 @@ Validar primeiro as pendências que alteram o comportamento da autenticação. S
 - o cadastro mencionado pelo responsável é o cadastro de recepcionistas, não de pacientes;
 - a entrega atual fica restrita a login, sessão, autorização e gestão de recepcionistas pelo gestor;
 - cadastro de pacientes pertence a outro integrante e não deve ser implementado nestes commits.
+
+## 25 de setembro de 2026 — incremento de autenticação concluído
+
+### Backend
+
+- criado usuário interno customizado antes da primeira migração;
+- implementados perfis gestor e recepção;
+- implementados login, sessão única, logout e expiração após 15 minutos;
+- implementado bloqueio temporário após cinco falhas;
+- implementada gestão de recepcionistas exclusiva do gestor;
+- criado comando seguro para recuperação da senha do gestor;
+- configurados MySQL 8.4, CORS e CSRF para o desenvolvimento local;
+- adicionados 21 testes automatizados, com 92% de cobertura medida no módulo backend.
+
+### Frontend
+
+- criada tela inicial de login responsiva;
+- criada área autenticada com navegação conforme o perfil;
+- criada tela de gestão de recepcionistas exclusiva do gestor;
+- implementados estados de carregamento, vazio, erro, sessão expirada e formulários acessíveis;
+- validado o fluxo em navegador nas versões desktop e móvel;
+- cadastro de pacientes permaneceu fora do código.
+
+### Versionamento
+
+- repositório Git inicializado na branch `main`;
+- mudanças divididas em commits de documentação, build, funcionalidade, correção e testes;
+- nenhum remote foi configurado e nenhum push foi realizado.
+
+### Validação pendente de ambiente
+
+- o arquivo do Docker Compose foi validado e o driver `mysqlclient` foi instalado;
+- a migração em MySQL real não foi executada nesta sessão porque o Docker Desktop estava instalado, porém com o daemon desligado, e não havia serviço MySQL local;
+- os testes automatizados foram executados no banco SQLite isolado previsto exclusivamente para testes.
