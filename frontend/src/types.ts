@@ -23,3 +23,19 @@ export interface ReceptionistPayload {
   is_active: boolean;
 }
 
+export interface Patient {
+  id: number;
+  nome_completo: string;
+  cpf: string;
+  data_nascimento: string;
+  telefone: string;
+  email: string;
+}
+
+export interface PatientPayload {
+  nome_completo: string;
+  cpf: string;
+  data_nascimento: string;
+  telefone: string;
+  email: string;
+}
