@@ -1,4 +1,11 @@
-import { LayoutDashboard, LogOut, Menu, UserRoundPlus, X } from "lucide-react";
+import {
+  LayoutDashboard,
+  LogOut,
+  Menu,
+  UserRound,
+  UserRoundPlus,
+  X,
+} from "lucide-react";
 import { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
@@ -27,7 +34,9 @@ export function AppLayout() {
         >
           {menuOpen ? <X size={21} /> : <Menu size={21} />}
         </button>
+
         <Brand compact />
+
         <div className="user-summary">
           <span className="status-dot" aria-hidden="true" />
           <span>
@@ -37,26 +46,60 @@ export function AppLayout() {
         </div>
       </header>
 
-      <aside className={`sidebar ${menuOpen ? "sidebar--open" : ""}`}>
-        <p className="sidebar__eyebrow">Navegação</p>
+      <aside
+        className={`sidebar ${
+          menuOpen ? "sidebar--open" : ""
+        }`}
+      >
+        <p className="sidebar__eyebrow">
+          Navegação
+        </p>
+
         <nav aria-label="Navegação principal">
-          <NavLink to="/" end onClick={() => setMenuOpen(false)}>
+          <NavLink
+            to="/"
+            end
+            onClick={() => setMenuOpen(false)}
+          >
             <LayoutDashboard size={18} />
             Início
           </NavLink>
+
+          <NavLink
+            to="/pacientes"
+            onClick={() => setMenuOpen(false)}
+          >
+            <UserRound size={18} />
+            Pacientes
+          </NavLink>
+
           {user?.role === "MANAGER" && (
-            <NavLink to="/equipe" onClick={() => setMenuOpen(false)}>
+            <NavLink
+              to="/equipe"
+              onClick={() => setMenuOpen(false)}
+            >
               <UserRoundPlus size={18} />
               Recepcionistas
             </NavLink>
           )}
         </nav>
+
         <div className="sidebar__note">
           <span aria-hidden="true" />
-          <strong>Cuidado desde o primeiro contato.</strong>
-          <p>Acesso individual e informações protegidas para uma recepção organizada.</p>
+          <strong>
+            Cuidado desde o primeiro contato.
+          </strong>
+          <p>
+            Acesso individual e informações
+            protegidas para uma recepção organizada.
+          </p>
         </div>
-        <button className="logout-button" type="button" onClick={handleLogout}>
+
+        <button
+          className="logout-button"
+          type="button"
+          onClick={handleLogout}
+        >
           <LogOut size={17} />
           Encerrar sessão
         </button>
@@ -70,10 +113,10 @@ export function AppLayout() {
           onClick={() => setMenuOpen(false)}
         />
       )}
+
       <main className="content-area">
         <Outlet />
       </main>
     </div>
   );
 }
-
