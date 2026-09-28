@@ -2,7 +2,7 @@
 
 Projeto acadêmico da disciplina de Projeto Integrador da UNIFACISA. O produto será um sistema de gerenciamento de filas adaptado ao contexto de uma clínica de psicologia. A ideia inicial de uma plataforma SaaS white label não faz parte do escopo atual.
 
-O primeiro incremento deste repositório implementa autenticação e gestão de usuários internos. O gestor poderá cadastrar e administrar recepcionistas; recepcionistas apenas utilizarão as funções autorizadas. Cadastro de pacientes, filas e demais módulos serão integrados pelos outros integrantes.
+O projeto implementa autenticação e gestão de usuários internos, cadastro de pacientes e cadastro administrativo de psicólogos. Cada psicólogo recebe uma fila individual preparada para a integração do fluxo operacional futuro.
 
 ## Documentação do projeto
 
@@ -26,10 +26,12 @@ A documentação viva está em [`docs/`](docs/README.md):
 - bloqueio por 15 minutos após cinco tentativas inválidas;
 - logout e invalidação de sessão;
 - cadastro, edição, ativação, desativação e redefinição de senha de recepcionistas pelo gestor;
+- cadastro, edição, ativação e desativação de psicólogos pelo gestor;
+- criação automática de uma fila individual para cada psicólogo;
 - recuperação assistida da senha do gestor por comando administrativo;
 - interface responsiva baseada na identidade visual fornecida.
 
-Cadastro de pacientes, filas, serviços e relatórios não foram implementados neste recorte.
+Entradas e operação das filas, serviços e relatórios ainda não foram implementados.
 
 ## Tecnologias
 

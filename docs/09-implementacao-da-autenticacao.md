@@ -82,7 +82,7 @@ O bloqueio usa 15 minutos como decisão técnica inicial. A tabela `LoginAttempt
 - verifique capacidades no backend, nunca apenas o valor escondido na interface;
 - adicione links laterais por perfil sem alterar o mecanismo de sessão;
 - não reutilize `User` para paciente ou psicólogo; são conceitos distintos;
-- psicólogos poderão possuir filas futuras sem receber conta de acesso no MVP;
+- psicólogos possuem cadastro próprio e fila individual no módulo `apps.psicologos`, sem receber conta de acesso no MVP;
 - cadastro de pacientes deve ser implementado em módulo próprio por outro integrante.
 
 ## Testes e qualidade

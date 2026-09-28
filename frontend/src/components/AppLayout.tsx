@@ -2,6 +2,7 @@ import {
   LayoutDashboard,
   LogOut,
   Menu,
+  Stethoscope,
   UserRound,
   UserRoundPlus,
   X,
@@ -74,13 +75,22 @@ export function AppLayout() {
           </NavLink>
 
           {user?.role === "MANAGER" && (
-            <NavLink
-              to="/equipe"
-              onClick={() => setMenuOpen(false)}
-            >
-              <UserRoundPlus size={18} />
-              Recepcionistas
-            </NavLink>
+            <>
+              <NavLink
+                to="/equipe"
+                onClick={() => setMenuOpen(false)}
+              >
+                <UserRoundPlus size={18} />
+                Recepcionistas
+              </NavLink>
+              <NavLink
+                to="/psicologos"
+                onClick={() => setMenuOpen(false)}
+              >
+                <Stethoscope size={18} />
+                Psicólogos
+              </NavLink>
+            </>
           )}
         </nav>
 

@@ -4,9 +4,9 @@ Antes de analisar, planejar ou implementar qualquer mudança, leia `docs/README.
 
 ## Estado atual
 
-- A implementação autorizada neste trabalho cobre somente autenticação e gestão de contas internas: login, sessão, logout e cadastro/gestão de recepcionistas pelo gestor.
+- A implementação autorizada cobre autenticação e gestão de contas internas, além do cadastro de psicólogos e da estrutura mínima de uma fila própria por profissional.
 - Não criar modelo, API, tela, formulário ou validação de cadastro de pacientes; esse item pertence a outro integrante.
-- Não implementar o fluxo completo de filas, relatórios ou outros itens do backlog sem solicitação explícita.
+- A entidade `Fila` existente representa somente o vínculo individual com o psicólogo. Não implementar entradas, ordenação, chamada, atendimento ou o fluxo completo de filas sem solicitação explícita.
 - O produto atual é específico para uma clínica de psicologia. Não introduzir multiempresa, multitenancy ou white label sem mudança de escopo validada.
 
 ## Regras de trabalho futuras

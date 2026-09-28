@@ -6,6 +6,7 @@ import { ManagerRoute, ProtectedRoute } from "./components/ProtectedRoute";
 import { HomePage } from "./pages/HomePage";
 import { LoginPage } from "./pages/LoginPage";
 import { PacientesPage } from "./pages/PacientesPage";
+import { PsychologistsPage } from "./pages/PsychologistsPage";
 import { ReceptionistsPage } from "./pages/ReceptionistsPage";
 
 export default function App() {
@@ -28,6 +29,10 @@ export default function App() {
                 <Route
                   path="equipe"
                   element={<ReceptionistsPage />}
+                />
+                <Route
+                  path="psicologos"
+                  element={<PsychologistsPage />}
                 />
               </Route>
             </Route>

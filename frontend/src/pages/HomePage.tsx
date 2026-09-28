@@ -1,4 +1,4 @@
-import { ArrowRight, ShieldCheck, UserRoundPlus } from "lucide-react";
+import { ArrowRight, ShieldCheck, Stethoscope, UserRoundPlus } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { useAuth } from "../auth/useAuth";
@@ -21,15 +21,26 @@ export function HomePage() {
 
       <section className="welcome-grid" aria-label="Ações disponíveis">
         {isManager && (
-          <Link className="feature-card feature-card--action" to="/equipe">
-            <span className="feature-card__icon"><UserRoundPlus size={22} /></span>
-            <div>
-              <small>Gestão de acesso</small>
-              <h2>Recepcionistas</h2>
-              <p>Cadastre usuários, atualize dados e controle quem pode entrar no sistema.</p>
-            </div>
-            <ArrowRight size={20} />
-          </Link>
+          <>
+            <Link className="feature-card feature-card--action" to="/equipe">
+              <span className="feature-card__icon"><UserRoundPlus size={22} /></span>
+              <div>
+                <small>Gestão de acesso</small>
+                <h2>Recepcionistas</h2>
+                <p>Cadastre usuários, atualize dados e controle quem pode entrar no sistema.</p>
+              </div>
+              <ArrowRight size={20} />
+            </Link>
+            <Link className="feature-card feature-card--action" to="/psicologos">
+              <span className="feature-card__icon"><Stethoscope size={22} /></span>
+              <div>
+                <small>Configuração operacional</small>
+                <h2>Psicólogos</h2>
+                <p>Cadastre profissionais e prepare uma fila individual para cada um.</p>
+              </div>
+              <ArrowRight size={20} />
+            </Link>
+          </>
         )}
         <article className="feature-card">
           <span className="feature-card__icon"><ShieldCheck size={22} /></span>
@@ -45,10 +56,9 @@ export function HomePage() {
         <span aria-hidden="true" />
         <div>
           <strong>Base pronta para os próximos módulos</strong>
-          <p>Cadastro de pacientes e gerenciamento da fila serão integrados pela equipe nas próximas etapas.</p>
+          <p>O fluxo operacional das filas será integrado pela equipe nas próximas etapas.</p>
         </div>
       </section>
     </div>
   );
 }
-
