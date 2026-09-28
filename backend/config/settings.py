@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "apps.access_control",
     "apps.pacientes",
+    "apps.psicologos",
 ]
 
 MIDDLEWARE = [

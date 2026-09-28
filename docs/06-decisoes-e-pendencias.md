@@ -53,6 +53,7 @@
 | PEN-013 | Como registrar a restrição a profissional específico sem expor informação sensível? | Capacidade e privacidade. |
 | PEN-014 | O gestor também atua como recepção ou apenas administra/configura? | Matriz de autorização. |
 | PEN-015 | Quais campos e ações ficam disponíveis quando a conexão está instável, mas não totalmente indisponível? | Experiência e consistência. |
+| PEN-016 | Além do nome e do estado ativo, quais dados cadastrais do psicólogo serão exigidos (por exemplo, CRP) e quem poderá consultá-los? | Modelo, validações, permissões e privacidade do cadastro profissional. |
 
 ## Hipóteses de trabalho que não são decisões
 

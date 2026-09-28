@@ -14,6 +14,7 @@ Esta pasta consolida o entendimento obtido nas fontes de requisitos e deve ser m
 8. [`07-diretrizes-de-engenharia-e-git.md`](07-diretrizes-de-engenharia-e-git.md) — padrões a aplicar quando o desenvolvimento começar.
 9. [`08-historico-do-projeto.md`](08-historico-do-projeto.md) — evolução documental e marcos do projeto.
 10. [`09-implementacao-da-autenticacao.md`](09-implementacao-da-autenticacao.md) — arquitetura entregue, API e integração.
+11. [`10-implementacao-de-psicologos-e-filas.md`](10-implementacao-de-psicologos-e-filas.md) — cadastro de psicólogos e estrutura mínima de fila individual.
 
 ## Hierarquia das informações
 

@@ -89,3 +89,12 @@ Validar primeiro as pendências que alteram o comportamento da autenticação. S
 - o arquivo do Docker Compose foi validado e o driver `mysqlclient` foi instalado;
 - a migração em MySQL real não foi executada nesta sessão porque o Docker Desktop estava instalado, porém com o daemon desligado, e não havia serviço MySQL local;
 - os testes automatizados foram executados no banco SQLite isolado previsto exclusivamente para testes.
+
+## 28 de setembro de 2026 — cadastro de psicólogos
+
+- autorizado o cadastro de psicólogos e a preparação de uma fila individual por profissional;
+- criado módulo próprio, sem transformar psicólogo em usuário do sistema;
+- cadastro, listagem e edição ficaram restritos ao gestor;
+- cada cadastro cria sua fila na mesma transação;
+- o fluxo operacional das filas permaneceu fora deste incremento;
+- os campos profissionais ainda não confirmados foram registrados em `PEN-016`.

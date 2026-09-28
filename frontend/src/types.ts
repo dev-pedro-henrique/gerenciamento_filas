@@ -39,3 +39,16 @@ export interface PatientPayload {
   telefone: string;
   email: string;
 }
+
+export interface Psychologist {
+  id: number;
+  nome_completo: string;
+  ativo: boolean;
+  criado_em: string;
+  fila_id: number;
+}
+
+export interface PsychologistPayload {
+  nome_completo: string;
+  ativo: boolean;
+}
